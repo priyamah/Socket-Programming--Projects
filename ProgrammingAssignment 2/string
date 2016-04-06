@@ -1,0 +1,23 @@
+#include <stdio.h>
+void str_cpy(char *a,char *b);
+
+int main(void) {
+	char a[10]="priya";
+	char b[10];
+	str_cpy(a,b);
+	return 0;
+}
+void str_cpy(char *a,char *b)
+{
+	printf("inside str_cpy function");
+	int i=0;
+	while(a[i]!='\0')
+	{
+		b[i]=a[i];
+		i++;
+		printf("the value is %s",b);
+		
+	}
+	b[i]='\0';
+	printf("\nthe value of copied string is %s",b);
+}
